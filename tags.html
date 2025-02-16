@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from localhost/game/tags by MAS DEE - +628562626116 -  infoternakakun@gmail.com/3.x [XR&CO'2014], Sat, 15 Feb 2025 17:20:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Tags - </title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="x-dns-prefetch-control" content="on" />
+<meta name="description" content="">
+<meta name="keywords" content="games, online, arcade, html5, gamemonetize">
+<meta property="og:image" content="static/logo/y8/logo-y8.png">
+
+<link rel="shortcut icon" href="favicon_y8.ico">
+<link rel='apple-touch-icon'/ href="favicon_y8.ico">
+
+<link rel="stylesheet" type="text/css" href="templates/y8-like/css/play0050.css?ver=1970-01-01T00-00">
+<link rel="stylesheet" type="text/css" href="templates/y8-like/css/all0050.css?ver=1970-01-01T00-00">
+<script src="templates/y8-like/js/jquery.v1.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Oswald:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="cdn.jsdelivr.net/npm/%40splidejs/splide%403.6.12/dist/css/splide.min.css">
+
+<script type="text/javascript">
+    var siteUrl = 'http://localhost/game';
+</script>
+
+<script src="www.google.com/recaptcha/api.js"
+    async defer>
+</script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="preload" as="style" onload="this.rel='stylesheet'">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="preload" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .sidebar {
+            width: 40px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            display: flex;
+            transition: visibility 0s, all 0.15s ease-in-out;
+            content-visibility: auto;
+            background: #fff;
+            z-index: 999999999;
+            flex-direction: column;
+            cursor: pointer;
+            padding-top: 10px;
+            padding-bottom: 30px;
+            overflow: auto;
+            overflow-x: hidden;
+            overflow-anchor: none;
+            scrollbar-width: none;
+            font-family: Oswald, sans-serif;
+        }
+
+        .sidebar:hover {
+            width: 220px;
+            scrollbar-width: thin;
+            scrollbar-color: #0b9bca;
+        }
+
+        .sidebar::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+
+        .sidebar:hover::-webkit-scrollbar {
+            width: 3px;
+            height: 3px;
+            background: rgba(0, 0, 0, 0);
+        }
+
+        .sidebar::-webkit-scrollbar-thumb {
+            border-radius: 30px;
+        }
+
+        .sidebar:hover::-webkit-scrollbar-thumb {
+            background: #AAADBE;
+            border-radius: 30px;
+        }
+
+        .sidebar:hover::-webkit-scrollbar-corner {
+            background: rgba(0, 0, 0, 0);
+        }
+
+        .sidebar+.wrapper {
+            margin-left: 40px;
+        }
+
+        .sidebar-item:not(.no-hover):hover {
+            border-left-color: #E92224 !important;
+        }
+
+        .sidebar-item.no-link {
+            pointer-events: none;
+        }
+
+        .sidebar-item.logo-title:hover {
+            border-left-color: #E92224 !important;
+            cursor: default;
+        }
+
+        .sidebar-item {
+            display: flex;
+            color: white !important;
+            text-decoration: none !important;
+            border-left-width: 6px !important;
+            border-left-style: solid !important;
+            border-left-color: transparent !important;
+        }
+
+        .sidebar-item.active {
+            color: #0b9bca !important;
+        }
+
+        .sidebar-item:hover .sidebar-item-icon {
+            opacity: .7;
+        }
+
+        .sidebar-item:not(.no-hover):hover .sidebar-item-title {
+            transition: visibility 0s, all 0.15s ease-in-out;
+            margin-left: 5px;
+        }
+
+        .sidebar-item.logo-title:hover .sidebar-item-title {
+            transition: visibility 0s, all 0.15s ease-in-out;
+            margin-left: 0 !important;
+        }
+
+        .sidebar-item .search input {
+            width: 100px;
+            background: #fff;
+            border: 0;
+            height: 30px;
+            padding: 0 10px;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.35) inset;
+            border-radius: 5px;
+        }
+
+        .sidebar-item .search button {
+            width: 30px;
+            line-height: 30px;
+            color: #fff;
+            font-size: 14px;
+            font-family: Oswald sans-serif;
+            background: #043856;
+            border-radius: 5px;
+            border: 0;
+            cursor: pointer;
+        }
+
+        .sidebar-item-icon {
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            text-align: center;
+            display: flex;
+            font-size: 2rem;
+            /* padding: 0 19px; */
+            /* margin-left: -5px; */
+            /* width: 40px; */
+            max-width: 45px;
+            min-width: 45px;
+            height: 40px;
+        }
+
+        .sidebar-item-icon i {
+            /* margin: 0 !important; */
+            color: #66667E;
+        }
+
+        .sidebar-item-title {
+            white-space: nowrap;
+            font-weight: bold;
+            align-self: center;
+            color: #66667E;
+            letter-spacing: 1px;
+            font-size: 1.4em !important;
+        }
+
+        .sidebar .separator {
+            width: 100%;
+            margin-right: 5px;
+            padding: 0;
+            opacity: 0.4;
+            border: none;
+            height: 2px;
+            color: #cacaca;
+            background-color: #cacaca;
+            border-radius: 5%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header" class="fix-top">
+
+    <div class="head-inner">
+        <div class="menu-mobile">
+            <i class="material-icons-outlined material-symbols-outlined">menu</i>
+            <i class="material-icons-outlined material-symbols-outlined fn-hide">close</i>
+        </div>
+        <div class="logo">
+            <a href="index.html" class="hide-text">Play Best Free Online Games</a>
+        </div>
+        <div class="search-form">
+            <form id="search-data-form" method="POST" autocomplete="off">
+                <input type="text" class="txt fn-left search-input" id="Search-InArea" name="search_parameter" type="text" placeholder="Search games...">
+                <input type="submit" class="btn" value="" id="search" aria-label="search-button">
+            </form>
+        </div>
+        <div class="other-btn">
+            <div class="menu-btn new-games">
+                <i class="new"></i>
+                <div>
+                    <div>New Games</div>
+                    <div class="more"><span>&</span> more</div>
+                </div>
+                <i class="arrow-down"></i>
+                <div class="new-games-pop-up fn-hide">
+                    <a href="new-games.html">
+                        <i class="material-icons-outlined material-symbols-outlined">new_releases</i>
+                        New Games
+                    </a>
+                    <a href="best-games.html">
+                        <i class="material-icons-outlined material-symbols-outlined">star</i>
+                        Best Games
+                    </a>
+                    <a href="featured-games.html">
+                        <i class="material-icons-outlined material-symbols-outlined">auto_graph</i>
+                        Featured Games
+                    </a>
+                    <a href="played-games.html">
+                        <i class="material-icons-outlined material-symbols-outlined">play_circle</i>
+                        Played Games
+                    </a>
+                </div>
+            </div>
+            <a class="menu-btn" href="blogs.html">
+                <i class="blog"></i>
+                <div>Blog</div>
+            </a>
+        </div>
+        <div class="right-btn-mobile">
+            <div class="search-btn">
+            </div>
+            <!-- <a class="menu-btn blog-link-mobile" href="http://localhost/game/blogs">
+                <i class="blog"></i>
+                <div>Blog</div>
+            </a> -->
+        </div>
+        <!-- <div class="menu">
+            <ul class="menu-ul fn-clear">
+                <li class="submenu">
+                    <a href="http://localhost/game/categories" class=""><i class="cate"></i><span>Category</span></a>
+                    <div class="menupopup fn-hide">
+                        <ul class="cate-list">
+                            <a href="http://localhost/game/category/action-games" class="">Action Games</a><a href="http://localhost/game/category/racing-games" class="">Racing Games</a><a href="http://localhost/game/category/shooting-games" class="">Shooting Games</a><a href="http://localhost/game/category/arcade-games" class="">Arcade Games</a><a href="http://localhost/game/category/puzzle-games" class="">Puzzle Games</a><a href="http://localhost/game/category/strategy-games" class="">Strategy Games</a><a href="http://localhost/game/category/multiplayer-games" class="">Multiplayer Games</a><a href="http://localhost/game/category/sports-games" class="">Sports Games</a><a href="http://localhost/game/category/fighting-games" class="">Fighting Games</a>
+                            <li><a href="http://localhost/game/categories" class="">More Categories &gt;&gt;</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="tips" href="http://localhost/game/new-games"><i class="new"></i><span>New</span></a>
+                    <div class="tooltip fn-hide">
+                        <span class="arrow"></span>
+                        <div class="tip-txt">New Games</div>
+                    </div>
+                </li>
+                <li>
+                    <a class="tips" href="http://localhost/game/best-games"><i class="best"></i><span>Best</span></a>
+                    <div class="tooltip fn-hide">
+                        <span class="arrow"></span>
+                        <div class="tip-txt">Best Games</div>
+                    </div>
+                </li>
+                <li>
+                    <a href="http://localhost/game/featured-games"><i class="featur"></i><span>Featured</span></a>
+                    <div class="tooltip featip fn-hide">
+                        <span class="arrow"></span>
+                        <div class="tip-txt">Featured Games</div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="http://localhost/game/played-games"> <i class="recent"></i> <span>Played</span></a>
+                    <div class="tooltip featip fn-hide">
+                        <span class="arrow"></span>
+                        <div class="tip-txt">Played Games</div>
+                    </div>
+                </li>
+                <li>
+                    <a href="http://localhost/game/blogs"> <i class="blog"></i> <span>Blog</span></a>
+                    <div class="tooltip featip fn-hide">
+                        <span class="arrow"></span>
+                        <div class="tip-txt">Blog Post</div>
+                    </div>
+                </li>
+
+            </ul>
+        </div> -->
+    </div>
+
+</div>
+
+<div class="h-head"></div>
+
+
+<div class="new-games-pop-up-mobile fn-hide">
+    <div class="new-games-btns">
+        <a href="new-games.html">
+            <i class="material-icons-outlined material-symbols-outlined">new_releases</i>
+            New Games
+        </a>
+        <a href="best-games.html">
+            <i class="material-icons-outlined material-symbols-outlined">star</i>
+            Best Games
+        </a>
+        <a href="featured-games.html">
+            <i class="material-icons-outlined material-symbols-outlined">auto_graph</i>
+            Featured Games
+        </a>
+        <a href="played-games.html">
+            <i class="material-icons-outlined material-symbols-outlined">play_circle</i>
+            Played Games
+        </a>
+    </div>
+    <div class="home-categories">
+        <a href="category/action-games.html" class="">Action Games</a><a href="category/racing-games.html" class="">Racing Games</a><a href="category/shooting-games.html" class="">Shooting Games</a><a href="category/arcade-games.html" class="">Arcade Games</a><a href="category/puzzle-games.html" class="">Puzzle Games</a><a href="category/strategy-games.html" class="">Strategy Games</a><a href="category/multiplayer-games.html" class="">Multiplayer Games</a><a href="category/sports-games.html" class="">Sports Games</a><a href="category/fighting-games.html" class="">Fighting Games</a>
+        <a href="categories.html" class="">More Categories</a>
+    </div>
+    <div class="home-tags">
+        
+        <a href="tags.html" class="">More Tags</a>
+    </div>
+</div>
+
+    
+
+    <div  class="gamemonetize-page-tree gamemonetize-container" style="">
+
+        <script language="javascript">var PageType =""; var ids ="";</script>
+	<div class="page-title">
+    <h1>Tag Overview</h1>
+    <p>Crazygamesx is a widely acclaimed online gaming platform that caters to players of all types, offering a vast array of games across various genres. Whether you're a casual gamer seeking a fun distraction or a dedicated player searching for deeper, more immersive experiences, Crazygamesx has something to satisfy every preference. With hundreds of game categories available, it's easy for users to find the perfect game, whether you're in the mood for action-packed excitement or a relaxing puzzle challenge.</p>
+</div>
+<div id="Gameinner" class="bgs" style="max-width: 100%;margin-bottom:40px;">
+    <div class="partners fn-clear tags-list-container">
+
+    
+    </div>
+    
+</div>
+<div id="Gameinner" class="bgs" style="max-width: 100%;margin-bottom:70px;">
+    <div class="bottomtext fn-clear" style="padding:20px;">    
+        . Tag Overview
+    </div>
+</div>
+    </div>
+
+    <div id="footer" class=fix style="z-index: 999999999;">
+    <div class="foot-inner">
+        <div class="link-b fn-left">
+            <a href="contact.html">Contact</a> |
+            <a href="about.html">About Us</a>  
+        </div>
+        <div class="link-b fn-right">
+            <a href="terms.html">Terms</a> |
+            <a href="privacy.html">Privacy</a> |
+            <span>GamePlay &copy; 2025</span>
+        </div>
+        <div class="link-b2">
+            <a href="game/red-and-blue-stickman-spy-puzzles-2.html">Random Game</a>
+        </div>
+    </div>
+</div>
+    
+<script>
+    //gotop
+    $(function() {
+        var sT = $(window).scrollTop();
+        if ($(window).scrollTop() != "0")
+            $("#BackTop").fadeIn("slow");
+        var scrollDiv = $("#BackTop");
+        $(window).scroll(function() {
+            if ($(window).scrollTop() == "0")
+                $(scrollDiv).fadeOut("slow")
+            else
+                $(scrollDiv).fadeIn("slow")
+        });
+        $("#BackTop").click(function() {
+            $("html, body").animate({
+                scrollTop: 0
+            }, "slow")
+        });
+    });
+</script>
+
+<script src="templates/y8-like/js/global.js"></script>
+<script src="templates/y8-like/js/jquery.masnory.min.js"></script>
+<script src="templates/y8-like/js/gamefree.js"></script>
+<script src="static/libs/js/jquery.form.min.js"></script>
+<script src="static/libs/js/root.js"></script>
+<script src="templates/y8-like/js/general.js"></script>
+<script src="templates/y8-like/js/index.js"></script>
+<script src="cdn.jsdelivr.net/npm/%40splidejs/splide%403.6.12/dist/js/splide.min.js"></script><script></script>
+
+    <script>
+        $('.sidebar').mouseenter(function() {
+            $('.logo-icon').css('width', '120px');
+            $('.logo-icon').attr('src', '../static/logo/kizi/logo.html');
+        });
+
+        $('.sidebar').mouseleave(function() {
+            $('.logo-icon').css('width', '35px');
+            $('.logo-icon').attr('src', '../static/logo/kizi/logo-35.html');
+        });
+    </script>
+</body>
+
+
+<!-- Mirrored from localhost/game/tags by MAS DEE - +628562626116 -  infoternakakun@gmail.com/3.x [XR&CO'2014], Sat, 15 Feb 2025 17:20:09 GMT -->
+</html>
